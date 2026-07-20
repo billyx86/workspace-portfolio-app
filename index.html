@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Billy King — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="nav">
+    <a class="logo" href="#top">BK</a>
+    <nav>
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-sm" href="#contact">Hire me</a>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <p class="eyebrow">Product engineer · Designer · Builder</p>
+      <h1>
+        I craft <em>calm</em> digital
+        products people actually enjoy.
+      </h1>
+      <p class="lede">
+        Hi, I'm Billy — a full-stack engineer who ships polished web apps,
+        design systems, and interactive experiences. Currently open for
+        select freelance and collab work.
+      </p>
+      <div class="hero-actions">
+        <a class="btn" href="#work">See selected work</a>
+        <a class="btn btn-ghost" href="https://github.com/billyx86" target="_blank" rel="noopener">GitHub →</a>
+      </div>
+      <div class="hero-stats">
+        <div><strong>7+</strong><span>years shipping</span></div>
+        <div><strong>40+</strong><span>products launched</span></div>
+        <div><strong>3</strong><span>startups scaled</span></div>
+      </div>
+    </section>
+
+    <section id="work" class="section">
+      <div class="section-head">
+        <h2>Selected work</h2>
+        <p>A few projects I'm proud of — from zero to production.</p>
+      </div>
+      <div class="projects" id="projects"></div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="about-grid">
+        <div>
+          <h2>About</h2>
+          <p>
+            I care about the details that make software feel inevitable —
+            motion, typography, accessibility, and performance. I work across
+            the stack with React, TypeScript, Node, and modern design tools.
+          </p>
+          <p>
+            Outside of code: film photography, trail running, and collecting
+            type specimens. Always happy to talk about systems that scale
+            without losing their soul.
+          </p>
+        </div>
+        <aside class="card experience">
+          <h3>Experience</h3>
+          <ul id="experience"></ul>
+        </aside>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="section-head">
+        <h2>Skills & tools</h2>
+        <p>Pragmatic stack, strong opinions, loose grip on frameworks.</p>
+      </div>
+      <div class="skills" id="skills"></div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <h2>Let's build something</h2>
+      <p class="lede">Have a product idea, redesign, or engineering challenge?</p>
+      <form id="contact-form" class="contact-form">
+        <label>
+          Name
+          <input name="name" type="text" required placeholder="Ada Lovelace" />
+        </label>
+        <label>
+          Email
+          <input name="email" type="email" required placeholder="ada@example.com" />
+        </label>
+        <label class="full">
+          Message
+          <textarea name="message" rows="4" required placeholder="Tell me about your project…"></textarea>
+        </label>
+        <button class="btn full" type="submit">Send message</button>
+        <p class="form-status" id="form-status" hidden></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© <span id="year"></span> Billy King</span>
+    <div class="socials">
+      <a href="https://github.com/billyx86" target="_blank" rel="noopener">GitHub</a>
+      <a href="mailto:hello@example.com">Email</a>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

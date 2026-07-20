@@ -1,0 +1,2 @@
+hello from workspace test
+written via GitHub API (no local shell/write tools available in agent tool list)

@@ -26,7 +26,8 @@ npx serve .
 |------|---------|
 | `index.html` | Structure |
 | `styles.css` | Theme & layout |
-| `app.js` | Project/experience data + form |
-| `hello.txt` | Sandbox write probe |
+| `app.js` | Rendering + form logic (pure, exported for tests) |
+| `data.js` | Project / experience / skills content |
+| `test/app.test.js` | Unit tests (node:test) |
 
 Created as part of an App Builder workspace connectivity test when local shell/write tools were unavailable — files were written via the GitHub API to `billyx86/workspace-portfolio-app`.
